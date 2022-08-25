@@ -17,6 +17,7 @@ function Bot () {
         {
             id: '1',
             user: true,
+            trigger: '2',
         },
         {
           id: '2',
