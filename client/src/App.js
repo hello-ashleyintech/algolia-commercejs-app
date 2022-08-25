@@ -3,6 +3,7 @@ import commerce from './lib/commerce';
 
 import ProductsList from './components/ProductsList';
 import NavBar from './components/NavBar';
+import Bot from './components/ChatBot/Bot';
 
 function App () {
   const [products, setProducts] = useState([]);
@@ -29,6 +30,7 @@ function App () {
       <ProductsList 
         products={products}
       />
+      <Bot />
     </div>
   )
 };

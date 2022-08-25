@@ -1,5 +1,5 @@
 import React from "react";
-import {ReactComponent as CartIcon } from "../assets/cart.svg";
+import { ReactComponent as CartIcon } from "../assets/cart.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import "./NavBar.css";
 
