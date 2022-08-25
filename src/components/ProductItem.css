@@ -1,0 +1,31 @@
+.product__card {
+    margin: auto;
+    position: 50%;
+}
+
+.product__image {
+    width: auto;
+    height: 100%;
+    max-height: 50vh;
+}
+.product__info {
+    width: max-content;
+}
+
+.product__description {
+    font-weight: 250;
+}
+
+
+.product__price {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 430px) {
+    .product__image {
+      height: 300px;
+    }
+    .product__card {
+      padding-right: 10vh;
+    }
+}

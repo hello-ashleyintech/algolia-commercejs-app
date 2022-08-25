@@ -1,0 +1,7 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}

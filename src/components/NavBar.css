@@ -1,0 +1,45 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1;
+    color: #000000;
+
+}
+
+.options {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo-container {
+    width: 70px;
+    padding: 25px;
+    padding-left: 5%;
+}
+
+.logo {
+    position: absolute;
+    left: 1%;
+    top: 25%;
+    width: 50px;
+    height: 50px;
+}
+
+.cart {
+    width: 35px;
+}
+
+h3:hover {
+    color: #FF5733;
+}
