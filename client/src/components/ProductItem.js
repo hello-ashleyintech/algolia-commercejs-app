@@ -1,15 +1,15 @@
 import React from "react";
-import { stripHtml } from 'string-strip-html';
-import PropTypes from 'prop-types';
-import './ProductItem.css';
+import PropTypes from "prop-types";
+import "./ProductItem.css";
 
-function ProductItem ({ product }) {
-
-  const { result } = stripHtml(product.description);
-
+function ProductItem({ product }) {
   return (
     <div className="product__card">
-      <img className="product__image" src={product.image?.url} alt={product.name} />
+      <img
+        className="product__image"
+        src={product.image?.url}
+        alt={product.name}
+      />
       <div className="product__info">
         <h4 className="product__name">{product.name.toUpperCase()}</h4>
         <div className="product__details">
@@ -18,9 +18,9 @@ function ProductItem ({ product }) {
           </p>
         </div>
       </div>
-    </div> 
+    </div>
   );
-};
+}
 
 ProductItem.propTypes = {
   product: PropTypes.object,

@@ -1,44 +1,43 @@
 .product__card {
-    margin: auto;
-    position: 50%;
-    max-width: 300px;
-    padding-bottom: 50px;
+  margin: auto;
+  position: 50%;
+  max-width: 300px;
+  padding-bottom: 50px;
 }
 
 .product__image {
-    width: auto;
-    height: 100%;
-    max-height: 400px;
+  width: auto;
+  height: 100%;
+  max-height: 400px;
 }
 .product__info {
-    width: max-content;
-    align-content: center;
+  width: max-content;
+  align-content: center;
 }
 
 .product__description {
-    font-weight: 250;
-    max-width: 300px;
+  font-weight: 250;
+  max-width: 300px;
 }
 
-
 .product__price {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 430px) {
-    .product__image {
-      width: 300px;
-    }
-    .product__card {
-      padding-right: 10vh;
-    }
+  .product__image {
+    width: 300px;
+  }
+  .product__card {
+    padding-right: 10vh;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .product__image {
-      width: 300px;
-    }
-    .product__card {
-      padding-right: 10vh;
-    }
+  .product__image {
+    width: 300px;
+  }
+  .product__card {
+    padding-right: 10vh;
+  }
 }
