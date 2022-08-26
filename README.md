@@ -5,6 +5,7 @@
 Here at Vinty, we pride ourselves in not just offering luxury items, but also a luxurious shopping experience - even on the web! Although the Vinty stylists and curators would love to be available 24/7 to assist shoppers, they are unable to. To help out, we've added a handy chatbot to the Vinty site - powered by `react-chatbot-simple` and Algolia - to help make recommendations based on what customers are looking for.
 
 The application in this repo will allow you to create a simple e-commerce store with chatbot search functionalities, as seen below:
+
 ![chatbot](https://user-images.githubusercontent.com/12901850/186823255-01cb05fb-bfc3-462c-a76c-3b0bfa269f52.gif)
 
 ## Getting Started
@@ -28,7 +29,7 @@ For the `ALGOLIA_API_KEY` in `server`, use the Admin API Key.
 
 ### Running the application
 
-To run the application, you'll run `npm start` in both the `client` and `server` directories of your project at the same time. This will run the frontend and backend code concurrently.
+To run the application, you'll run `npm install` and then `npm start` in both the `client` and `server` directories of your project at the same time. This will install the required dependencies and then run the frontend and backend code concurrently.
 
 To access the frontend, you'll be on `localhost:3000`. Your backend will be on `localhost:3001`.
 
