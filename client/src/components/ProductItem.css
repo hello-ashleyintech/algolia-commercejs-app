@@ -1,8 +1,14 @@
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .product__card {
   margin: auto;
   position: 50%;
   max-width: 300px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .product__image {
@@ -11,8 +17,9 @@
   max-height: 400px;
 }
 .product__info {
-  width: max-content;
-  align-content: center;
+  max-width: 300px;
+  margin: auto;
+  position: 50%;
 }
 
 .product__description {
