@@ -23,8 +23,10 @@ function Search(props) {
     let data = {
       query: query,
     };
+    // replace URL in fetch with your ngrok tunnel
+    // (keep `/recommendation` at the end of the URL)
     fetch(
-      "https://7b73-2601-c2-980-5540-591a-6c39-6c05-fe5a.ngrok.io/recommendation",
+      "https://ngrok-url-1234.ngrok.io/recommendation",
       {
         method: "POST",
         body: JSON.stringify(data),
