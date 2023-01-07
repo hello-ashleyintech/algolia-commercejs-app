@@ -46,7 +46,8 @@ Once you have `ngrok` set up, you're going to take the web address for your tunn
 Then, make sure you save your webhook and confirm that a test request goes through successfully. Once it goes through with a `200` success code, congrats! 🎉 You can now add in products and have them synced to your Algolia index.
 
 ### Update code with ngrok URL
-Now that Chec and `ngrok` are set up, the final step is to swap out your `ngrok` tunnel URL in `client/src/components/ChatBot/Search.js` within the `getHits()` fetch request. Make sure that the `/recommendation` endpoint is still appened to the URL (ex: `https://ngrok-url-1234.ngrok.io/recommendation`).
+
+Now that Chec and `ngrok` are set up, the final step is to swap out your `ngrok` tunnel URL in `client/src/components/ChatBot/Search.js` within the `useEffect`'s fetch request. Make sure that the `/recommendation` endpoint is still appened to the URL (ex: `https://ngrok-url-1234.ngrok.io/recommendation`).
 
 ### Add products to CommerceJS store
 

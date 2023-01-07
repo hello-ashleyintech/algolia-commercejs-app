@@ -57,7 +57,7 @@ function Search(props) {
 
         setResults(hits);
       });
-  }, [steps]);
+  }, []);
 
   return (
     <>
