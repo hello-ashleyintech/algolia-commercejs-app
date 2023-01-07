@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./Search.css";
 
 function Search(props) {
+  const { steps } = props;
   const [results, setResults] = useState([]);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-
-  let query = props.steps[1].value;
 
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -16,7 +15,8 @@ function Search(props) {
     return array;
   }
 
-  async function getHits() {
+  useEffect(() => {
+    let query = steps[1].value;
     // query and then update component with API response
     // api call to get all completed orders
     setError("");
@@ -25,14 +25,11 @@ function Search(props) {
     };
     // replace URL in fetch with your ngrok tunnel
     // (keep `/recommendation` at the end of the URL)
-    fetch(
-      "https://ngrok-url-1234.ngrok.io/recommendation",
-      {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" },
-      }
-    )
+    fetch("https://ngrok-url-1234.ngrok.io/recommendation", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+    })
       .then((response) => {
         if (response.status === 200) {
           return response.json();
@@ -60,11 +57,7 @@ function Search(props) {
 
         setResults(hits);
       });
-  }
-
-  useEffect(() => {
-    getHits();
-  }, []);
+  }, [steps]);
 
   return (
     <>
@@ -78,7 +71,7 @@ function Search(props) {
                     <img
                       src={result.image.url.replace(/ /g, "%")}
                       width="100"
-                      alt="product image"
+                      alt="product"
                     ></img>
                     <h3>{result.name}</h3>
                     <h4>{result.price.formatted}</h4>
